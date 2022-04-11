@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="vieport" content="width=device-width">
+        <link rel="stylesheet" href="karwia-pod.css">
+        <title>Karwia noclegi</title>
+        <link rel="shortcut icon" href="">
+    </head>
+    <body>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+        
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="karwia-oferty.html" style="font-size: 30px;" class="active">Karwia</a>
+              <div id="myLinks">
+                <a style="text-align: center;" href="karwia-kontakt.html">Kontakt</a>
+                <a style="text-align: center;" href="karwia-onas.html">O nas</a>
+                <a style="text-align: center;" href="karwia-oferty.html">Oferty</a>
+                <a style="text-align: center;" href="karwia-informacje.html">Informacje</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            
+    
+            
+            <!-- End smartphone / tablet look -->
+            </div>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <div class="media">
+                <a href="tel:+48000000000" class="fa fa-phone"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/michalinakalmucka/" class="fa fa-instagram"></a>
+            </div>
+
+            <div class="sea">
+                <img src="sea.gif" alt="">
+            </div>
+
+            <h1>Kontakt</h1>
+
+
+            <form class="form" id="contactForm" method="post" novalidate action="/send-scripts.php">
+              <div class="form-row">
+                  <label for="field-name">Imię*</label>
+                  <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+              </div>
+              <div class="form-row">
+                  <label for="field-email">Email*</label>
+                  <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+              </div>
+              <div class="form-row">
+                  <label for="field-message">Wiadomość*</label>
+                  <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+              </div>
+              <div class="form-row">
+                  <label class="checkbox-cnt">
+                      <input type="checkbox" data-error="Musisz wypełnić pole" name="regulation">
+                      <i class="state" aria-hidden="true"></i>
+                      <span style="font-family: 'Courier New', Courier, monospace; font-weight: 900;">Wyrażam zgodę na przetwarzanie moich danych osobowych przez NAZWAFIRMY w niezbędnych czynnościach procesów rekrutacyjnych.</span>
+                  </label>
+              </div>
+              <div class="form-row">
+                  <button type="submit" class="submit-btn">
+                      Wyślij
+                  </button>
+              </div>
+          </form>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18386.625603323588!2d18.197361005685266!3d54.82691916170215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fdcab30fcc801f%3A0x5e6b0aff3ddf9d60!2sKarwia!5e0!3m2!1spl!2spl!4v1609846999072!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0; width: 100%; padding-top: 35px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
